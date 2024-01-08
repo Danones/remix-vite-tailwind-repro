@@ -4,8 +4,9 @@ import {
   Meta,
   Outlet,
   Scripts,
-  ScrollRestoration,
+  ScrollRestoration
 } from "@remix-run/react";
+import "../styles.css";
 
 export default function App() {
   return (

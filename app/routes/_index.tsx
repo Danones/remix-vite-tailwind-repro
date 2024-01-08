@@ -1,11 +1,4 @@
-import type { MetaFunction } from "@remix-run/node";
-import "../../src/output.css";
-export const meta: MetaFunction = () => {
-  return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" }
-  ];
-};
+import "../../styles.css";
 
 export default function Index() {
   return (
@@ -37,8 +30,8 @@ export default function Index() {
         </li>
       </ul>
 
-      <p className="text-5xl bg-blue-100 font-bold ">Test</p>
-      {/* <p className="text-5xl bg-red-200 font-bold ">Test</p> */}
+      <p className="text-5xl bg-red-400 font-bold ">Test</p>
+      {/* Adjust the above bg-red-400 to bg-yellow-400 for example or even the JSX , to replicate the issue */}
     </div>
   );
 }
